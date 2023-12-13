@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1060831057}
   m_OriginBaseGameObject: {fileID: 517529176}
   m_CameraFloorOffsetObject: {fileID: 298964987}
-  m_RequestedTrackingOriginMode: 1
+  m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.1176
 --- !u!4 &517529178
 Transform:
@@ -682,6 +682,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2053206244477732450, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1021675334}
+    - target: {fileID: -2053206244477732450, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1021675334}
+    - target: {fileID: -2053206244477732450, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleOutlineVisualizer
+      objectReference: {fileID: 0}
+    - target: {fileID: -2053206244477732450, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleOutlineVisualizer
+      objectReference: {fileID: 0}
+    - target: {fileID: -2053206244477732450, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Selection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -2053206244477732450, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Selection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -2053206244477732450, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: -2053206244477732450, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1733945558841920, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_Name
       value: Earth
@@ -748,10 +780,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1021675333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6abcd966855aec4e921acf693799d05, type: 3}
+  m_Script: {fileID: 11500000, guid: 1719ba857339b3d449a3ecdec15ac259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotation: {x: 0, y: 10, z: 0}
 --- !u!1 &1060831051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,6 +1254,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921056363}
   m_CullTransparentMesh: 1
+--- !u!1 &1957859539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1957859541}
+  - component: {fileID: 1957859540}
+  m_Layer: 0
+  m_Name: XR Interaction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1957859540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957859539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+--- !u!4 &1957859541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957859539}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.759941, y: 1.4521279, z: -0.09200625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1234,3 +1311,4 @@ SceneRoots:
   - {fileID: 1384813814}
   - {fileID: 1021675332}
   - {fileID: 98280491}
+  - {fileID: 1957859541}
